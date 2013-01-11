@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame 
+       Remove this if you use the .htaccess -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <title>Film Review Form</title>
+  <meta name="description" content="" />
+  <meta name="author" content="bricklerml" />
+
+  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+  <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+</head>
+
+<body>
+  <div>
+    <header>
+      <h1>templates</h1>
+    </header>
+    <nav>
+      <p><a href="/">Home</a></p>
+      <p><a href="/contact">Contact</a></p>
+    </nav>
+
+
+	<form>
+		<fieldset name="filmInfo" id="filmInfo">
+			<article>
+				<aside >
+				 <input name="filmID" id="filmID" hidden />
+				 <label for="filmTitle">Title: </label>
+				 <input name="filmTitle" id="filmTitle" />
+				 <span><label for="filmDirector">Director: </label>
+						<input name="filmDirector" id="filmDirector" />
+						<label for="filmYear">Year: </label>
+						<input name="filmYear" id="filmYear" />
+						<label for="filmLength">Length: </label>
+						<input name="filmLength" id="filmLength" /></span>
+				 <span><label for="filmStudio">Studio: </label>
+						<input name="filmStudio" id="filmStudio" />
+						<label for="filmFormat">Format: </label>
+						<input name="filmFormat" id="filmFormat" /></span>
+				 <span><label for="filmProducer">Producer: </label>
+						<input name="filmProducer" id="filmProducer" />
+						<label for="filmWriter">Writer: </label>
+						<input name="filmWriter" id="filmWriter" /></span>
+				 <label for="filmOther">Other: </label>
+				 <input name="filmOther" id="filmOther" />
+				 <label for="filmLoc">Location: </label>
+				 <input name="filmLoc" id="filmLoc" />
+				</aside>
+			</article>
+		</fieldset>
+		<fieldset name="castInfo" id="castInfo">
+			<article id="filmCastList" name="filmCastList">
+				<!-- use javascript to populate from actor-film table -->
+			</article>
+			
+		</fieldset>
+	</form>
+	
+    <div>
+      
+    </div>
+
+    <footer>
+     <p>&copy; Copyright  by bricklerml</p>
+    </footer>
+  </div>
+</body>
+</html>
