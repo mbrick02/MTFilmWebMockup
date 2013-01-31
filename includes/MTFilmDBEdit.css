@@ -1,0 +1,38 @@
+body{
+	background-color: rgba(169, 190, 192, 0.53);
+	font-size: 16px;
+}
+
+#wrapper{
+	width: 90%;
+	margin: 1% auto;
+}
+
+
+header{
+	background-color: rgba(200, 200, 200, 200);
+	color: teal;
+}
+
+h1, h2{
+	margin: 0;
+	padding: 12px 20px;
+}
+
+h1 {
+	padding-bottom: 0;
+	font-size: 36px;
+}
+
+h2{
+	padding-top: 0;
+	font-size: 18px;
+	padding-left: 23px;
+	color: rgb(205, 228, 225);
+}
+
+footer{
+	background: url("picture.png") no-repeat 0 0 #434343;
+	color: white;
+	
+}

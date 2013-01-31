@@ -16,6 +16,9 @@
   <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link id="MTFilmDBCSS" href="includes/MTFilmDBEdit.css" rel="stylesheet">
+  <script src="includes/jquery-1.8.3.min.js"></script>
+  <script src="includes/MTFilmDBEdit.js"></script>
 </head>
 
 <body>
@@ -27,8 +30,11 @@
       <p><a href="/">Home</a></p>
       <p><a href="/contact">Contact</a></p>
     </nav>
-
-
+  <section id="wrapper">
+  	<header>
+  		<h1>Film Database Record</h1>
+  		<h2>with images of old reviews below</h2>
+  	</header>
 	<form>
 		<fieldset name="filmInfo" id="filmInfo">
 			<article>
@@ -57,6 +63,7 @@
 				</aside>
 			</article>
 		</fieldset>
+
 		<fieldset name="castInfo" id="castInfo">
 			<article id="filmCastList" name="filmCastList">
 				<!-- use javascript to populate from actor-film table -->
@@ -64,7 +71,7 @@
 			
 		</fieldset>
 	</form>
-	
+  </section>	
     <div>
       
     </div>
