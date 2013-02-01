@@ -8,6 +8,16 @@ body{
 	margin: 1% auto;
 }
 
+input.rowItem {
+	float: left;
+}
+
+input.rowEnd {
+	float: left;
+	display: block;
+	clear: both;
+}
+
 
 header{
 	background-color: rgba(200, 200, 200, 200);
