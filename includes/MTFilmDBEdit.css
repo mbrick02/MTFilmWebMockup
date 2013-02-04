@@ -9,15 +9,19 @@ body{
 }
 
 input.rowItem {
-	float: left;
+	/* *** probably wont need/use .rowItem or .rowEnd to work with rows ******
+	 * float: left; */
 }
 
 input.rowEnd {
-	float: left;
-	display: block;
-	clear: both;
+	/* float: left;
+	// display: block;
+	 clear: both; */
 }
 
+.itemsLine {
+	display:block;
+}
 
 header{
 	background-color: rgba(200, 200, 200, 200);
