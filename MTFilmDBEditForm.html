@@ -16,6 +16,7 @@
   <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link href="includes/normalize.css">
   <link id="MTFilmDBCSS" href="includes/MTFilmDBEdit.css" rel="stylesheet">
   <script src="includes/jquery-1.8.3.min.js"></script>
   <script src="includes/MTFilmDBEdit.js"></script>
@@ -35,31 +36,61 @@
   		<h1>Film Database Record</h1>
   		<h2>with images of old reviews below</h2>
   	</header>
-	<form>
+	<form class="filmform group" action="#">
 		<fieldset name="filmInfo" id="filmInfo">
 			<article>
 				<aside >
 				 <input name="filmID" id="filmID" hidden />
-				 <label for="filmTitle">Title: </label>
-				 <input class="rowItem" name="filmTitle" id="filmTitle" />
-				 <div class="itemsLine"><label for="filmDirector">Director: </label>
-						<input name="filmDirector" id="filmDirector" />
-						<label for="filmYear">Year: </label>
-						<input name="filmYear" id="filmYear" />
-						<label for="filmLength">Length: </label>
-						<input name="filmLength" id="filmLength" /></div>
-				 <div><label for="filmStudio">Studio: </label>
-						<input name="filmStudio" id="filmStudio" />
-						<label for="filmFormat">Format: </label>
-						<input name="filmFormat" id="filmFormat" /></div>
-				 <div><label for="filmProducer">Producer: </label>
-						<input name="filmProducer" id="filmProducer" />
-						<label for="filmWriter">Writer: </label>
-						<input name="filmWriter" id="filmWriter" /></div>
-				 <label for="filmOther">Other: </label>
-				 <input name="filmOther" id="filmOther" />
-				 <label for="filmLoc">Location: </label>
-				 <input name="filmLoc" id="filmLoc" />
+				<ol>
+					<li>
+					 <label for="filmTitle">Title: </label>
+					 <input class="rowItem" name="filmTitle" id="filmTitle" />
+					</li>
+					<!-- div class="itemsLine" -->
+					<li><label for="filmDirector">Director: </label>
+							<input name="filmDirector" id="filmDirector" />
+					</li>
+					<li>
+							<label for="filmYear">Year: </label>
+								<input name="filmYear" id="filmYear" />
+					</li>
+					<li>
+												<label for="filmLength">Length: </label>
+												<input name="filmLength" id="filmLength" />
+					</li>
+					<!-- /div -->
+<!-- 					<div> -->
+					<li>
+											<label for="filmStudio">Studio: </label>
+												<input name="filmStudio" id="filmStudio" />
+					</li>
+					<li>
+												<label for="filmFormat">Format: </label>
+												<input name="filmFormat" id="filmFormat" />
+					</li>
+<!-- 					</div> -->
+<!-- 					<div> -->
+					<li>
+											 <label for="filmProducer">Producer: </label>
+											<input name="filmProducer" id="filmProducer" />
+					</li>
+					<li>						
+											<label for="filmWriter">Writer: </label>
+											<input name="filmWriter" id="filmWriter" />
+					</li>						
+<!-- 					</div> -->
+<!-- 					<div> -->
+					<li>
+										 <label for="filmOther">Other: </label>
+										 <input name="filmOther" id="filmOther" />
+					</li>
+					<li>
+										 <label for="filmLoc">Location: </label>
+										 <input name="filmLoc" id="filmLoc" />
+					</li>
+<!-- 					</div> -->
+					<button type="submit">Submit</button>
+				</ol>
 				</aside>
 			</article>
 		</fieldset>

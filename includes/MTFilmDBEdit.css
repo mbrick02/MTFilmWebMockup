@@ -1,6 +1,54 @@
-body{
-	background-color: rgba(169, 190, 192, 0.53);
-	font-size: 16px;
+/* this section for normalizing type code -- follows normalize.css */
+form * {
+	background: none;
+}
+
+/* below is a clearfix to make child element stay within parent container after float "clearing" */
+ 
+.group:before, .group:after {
+	content: "\0020"; /* space */
+	diplay: inline-block;
+	height: 0;
+	overflow: hidden;
+}
+
+.group:after {
+	clear: both;
+}
+
+/* below makes HTML 'layout' in IE<9 browsers to recalc floated child objects in cleared container  */
+.group {
+	zoom: 1;
+}
+
+input[type=text],input[type=password],input[type=submit], textarea, button{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border: none;
+	background: transparent;
+	
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	padding: 5px;
+	margin: 0;
+	margin-bottom: 10px;
+	color: #555;
+}
+
+/* end of normalizing code */
+
+body {
+	height: 500px;
+	background: #42826C;
+	background: #42826C -webkit-linear-gradient(#002F32,#42826C) no-repeat;
+	background: #42826C -moz-linear-gradient(#002F32,#42826C) no-repeat;
+	background: #42826C -o-linear-gradient(#002F32,#42826C) no-repeat;
+	background: #42826C -ms-linear-gradient(#002F32,#42826C) no-repeat;
+	background: #42826C linear-gradient(#002F32,#42826C) no-repeat;
+	filter:
+	  progid:DXImageTransformm.Microsoft.gradient( startColorstr='#002F32', 
+	     endColorstr='#42836C',GradientType=0 );
 }
 
 #wrapper{
@@ -18,10 +66,11 @@ input.rowEnd {
 	// display: block;
 	 clear: both; */
 }
-
+/*  Probably wont use this.....................
 .itemsLine {
 	display:block;
 }
+*/
 
 header{
 	background-color: rgba(200, 200, 200, 200);
@@ -49,4 +98,112 @@ footer{
 	background: url("picture.png") no-repeat 0 0 #434343;
 	color: white;
 	
+}
+
+fieldset {	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+}
+
+form fieldset {
+	width: 550px;
+	margin: 0 auto;
+	position: relative;
+	top: 10px;
+	background: #F9C35F;
+	background: url('./includes/pattern.png'), -webkit-linear-gradient(#F9C35F, #A5C775) no-repeat;
+	background: url('./includes/pattern.png'), -moz-linear-gradient(#F9C35F, #A5C775) no-repeat;
+	background: url('./includes/pattern.png'), -o-linear-gradient(#F9C35F, #A5C775) no-repeat;
+	background: url('./includes/pattern.png'), -ms-linear-gradient(#F9C35F, #A5C775) no-repeat;
+	background: url('./includes/pattern.png'), linear-gradient(#F9C35F, #A5C775) no-repeat;
+	
+	/* could put 'filter' for old Microsoft gradient here: filter: progid:DXImageTransform...*/
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+	-webkit-box-shadow: inset 0px 1px 1px
+	  rgba(255,255,255, 1), 0px 10px 15px
+	  rgba(0,0,0,.5);
+	-moz-box-shadow: inset 0px 1px 1px
+	  rgba(255,255,255, 1), 0px 10px 15px
+	  rgba(0,0,0,.5);
+	box-shadow: inset 0px 1px 1px
+	  rgba(255,255,255, 1), 0px 10px 15px
+	  rgba(0,0,0,.5);
+}
+
+input[type=text],input[type=password],input[type=submit], textarea {
+	border: 1px solid #47816A;
+	background: #FFF;
+	width: 330px;
+	float: right;
+}
+
+/* this was in the Lynda.com code for CSS3 form for the login button */
+button {
+	float: right;
+	color: #FFC861;
+	padding: 5px 10px;
+	
+	background: #022E32;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+
+/*
+ * code to keep labels to left (needs to match input styling)
+ *  ***Need to make  this conditional if we have a mobile browser with labels on top********** 
+label{
+	float: left;
+	text-align: right;
+	font-size: 13px;
+	color: #FC7D49;
+	padding: 5px;
+	clear: both;
+}
+*/
+
+input[type=text]:focus,input[type=password]:focus{
+	background: #DDD;
+}
+
+ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ol li ol {
+	padding: 5px;
+	float: left;
+	margin-left: 5px;
+}
+
+ol li ol li {
+	display: inline;
+}
+
+ol li ol li label {
+	padding: 0;
+	display: inline;
+	float: none;
+	font-weight: normal;
+}
+
+form fieldset ol li label, ol li .grouplabel {
+	font: bold 14px "Lucida Grande", Lucida, Verdana, sans-serif;
+	padding: 5px;
+	color: #315848;
+	display: block;
+	width: 90px;
+	float: left;
+	text-align: right;
+	text-shadow: 0 1px 0px #FFF;
 }
