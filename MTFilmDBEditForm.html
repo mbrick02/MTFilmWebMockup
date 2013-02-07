@@ -18,6 +18,19 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link href="includes/normalize.css">
   <link id="MTFilmDBCSS" href="includes/MTFilmDBEdit.css" rel="stylesheet">
+  
+  <!--[if lt IE 8]>
+  	<style>
+  		legend {
+  			display: block;
+  			font: 1.2em Cantarell, Arial, Helvetica, sans-serif;
+			font-weight:bold;
+			border-bottom: 1px solid rgb(76, 67, 65);
+			width: 80%;
+  		}
+  	</style>
+  <![endif]-->
+  
   <script src="includes/jquery-1.8.3.min.js"></script>
   <script src="includes/MTFilmDBEdit.js"></script>
 </head>
@@ -36,72 +49,68 @@
   		<h1>Film Database Record</h1>
   		<h2>with images of old reviews below</h2>
   	</header>
+  	<article>
 	<form class="filmform group" action="#">
-		<fieldset name="filmInfo" id="filmInfo">
-			<article>
-				<aside >
-				 <input name="filmID" id="filmID" hidden />
-				<ol>
-					<li>
-					 <label for="filmTitle">Title: </label>
-					 <input class="rowItem" name="filmTitle" id="filmTitle" />
-					</li>
-					<!-- div class="itemsLine" -->
-					<li><label for="filmDirector">Director: </label>
-							<input name="filmDirector" id="filmDirector" />
-					</li>
-					<li>
-							<label for="filmYear">Year: </label>
-								<input name="filmYear" id="filmYear" />
-					</li>
-					<li>
-												<label for="filmLength">Length: </label>
-												<input name="filmLength" id="filmLength" />
-					</li>
-					<!-- /div -->
-<!-- 					<div> -->
-					<li>
-											<label for="filmStudio">Studio: </label>
-												<input name="filmStudio" id="filmStudio" />
-					</li>
-					<li>
-												<label for="filmFormat">Format: </label>
-												<input name="filmFormat" id="filmFormat" />
-					</li>
-<!-- 					</div> -->
-<!-- 					<div> -->
-					<li>
-											 <label for="filmProducer">Producer: </label>
-											<input name="filmProducer" id="filmProducer" />
-					</li>
-					<li>						
-											<label for="filmWriter">Writer: </label>
-											<input name="filmWriter" id="filmWriter" />
-					</li>						
-<!-- 					</div> -->
-<!-- 					<div> -->
-					<li>
-										 <label for="filmOther">Other: </label>
-										 <input name="filmOther" id="filmOther" />
-					</li>
-					<li>
-										 <label for="filmLoc">Location: </label>
-										 <input name="filmLoc" id="filmLoc" />
-					</li>
-<!-- 					</div> -->
-					<button type="submit">Submit</button>
-				</ol>
-				</aside>
-			</article>
+		<fieldset name="production" id="production" title="Production Info">
+		<legend>Production Info</legend>
+		<ol>
+			<li>
+			 <input name="filmID" id="filmID" hidden />
+			 <label for="filmTitle">Title: </label>
+			 <input class="rowItem" name="filmTitle" id="filmTitle" />
+			</li>
+			<li><label for="filmDirector">Director: </label>
+					<input name="filmDirector" id="filmDirector" />
+			</li>
+			<li>
+					<label for="filmYear">Year: </label>
+						<input name="filmYear" id="filmYear" />
+			</li>
+			<li>
+										<label for="filmLength">Length: </label>
+										<input name="filmLength" id="filmLength" />
+			</li>
+			<li>
+									<label for="filmStudio">Studio: </label>
+										<input name="filmStudio" id="filmStudio" />
+			</li>
+			<li>
+										<label for="filmFormat">Format: </label>
+										<input name="filmFormat" id="filmFormat" />
+			</li>
+			<li>
+									 <label for="filmProducer">Producer: </label>
+									<input name="filmProducer" id="filmProducer" />
+			</li>
+			<li>						
+									<label for="filmWriter">Writer: </label>
+									<input name="filmWriter" id="filmWriter" />
+			</li>
+		</ol>
+		</fieldset>
+		<fieldset name="location" id="location" title="Location and Other Info">
+		<legend>Location and Other Info</legend>
+		<ol>
+			<li>
+								 <label for="filmLoc">Location: </label>
+								 <input name="filmLoc" id="filmLoc" />
+			</li>
+			<li>
+								 <label for="filmOther">Other: </label>
+								 <input name="filmOther" id="filmOther" />
+			</li>
+		</ol>					
 		</fieldset>
 
 		<fieldset name="castInfo" id="castInfo">
-			<article id="filmCastList" name="filmCastList">
-				<!-- use javascript to populate from actor-film table -->
-			</article>
-			
+			<legend>Cast</legend>
+			<!-- programatically filled by DB -->
+		</fieldset>
+		<fieldset>
+			<button type="submit">Upload</button>
 		</fieldset>
 	</form>
+  </article>
   </section>	
     <div>
       
