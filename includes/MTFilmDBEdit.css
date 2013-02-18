@@ -56,15 +56,21 @@ body {
 	margin: 1% auto;
 }
 
+form fieldset ul li label, form fieldset ul li input {
+	float: left;
+}
+
 input.rowItem {
 	/* *** probably wont need/use .rowItem or .rowEnd to work with rows ******
 	 * float: left; */
 }
 
-input.rowEnd {
-	/* float: left;
-	// display: block;
-	 clear: both; */
+#filmID{
+	display:none;
+}
+
+.newRow{
+	clear:left;
 }
 /*  Probably wont use this.....................
 .itemsLine {
@@ -229,10 +235,18 @@ fieldset {
 	border: none;
 	background: rgb(237, 228, 214);
 	position: relative;
-	width: 50%;
+	width: 80%;
 	padding: 1em;
 	margin: 1em 0;
 	-webkit-border-radius: 0 .5em .5em 0;
 	-moz-border-radius: 0 .5em .5em 0;
 	border-radius: 0 .5em .5em 0;
+}
+
+.fullRow{
+	width: 100%;
+}
+
+#filmTitle{
+	width:60%;
 }
