@@ -39,7 +39,7 @@ input[type=text],input[type=password],input[type=submit], textarea, button{
 /* end of normalizing code */
 
 body {
-	height: 900px;
+	height: 500px;
 	background: #42826C;
 	background: #42826C -webkit-linear-gradient(#002F32,#42826C) no-repeat;
 	background: #42826C -moz-linear-gradient(#002F32,#42826C) no-repeat;
@@ -55,11 +55,6 @@ body {
 	width: 90%;
 	margin: 1% auto;
 }
-
-nav p a{
-	color: #F1F1F1;
-}
-
 
 form fieldset ul li label, form fieldset ul li input {
 	float: left;
@@ -118,18 +113,10 @@ fieldset {
 	
 }
 
-article{
-	width: 550px;
-}
-
-aside{
-	width: 220px;
-	float: right;
-}
-
 form fieldset {
+	width: 550px;
 	margin: 0 auto;
-	/* position: relative; */
+	position: relative;
 	top: 10px;
 	background: #F9C35F;
 	background: url('./includes/pattern.png'), -webkit-linear-gradient(#F9C35F, #A5C775) no-repeat;
@@ -247,7 +234,7 @@ form ol li label, ol li .grouplabel {
 fieldset {
 	border: none;
 	background: rgb(237, 228, 214);
-	/* position: relative; */
+	position: relative;
 	width: 80%;
 	padding: 1em;
 	margin: 1em 0;

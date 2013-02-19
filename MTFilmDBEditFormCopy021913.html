@@ -49,8 +49,8 @@
   		<h1>Film Database Record</h1>
   		<h2>with images of old reviews below</h2>
   	</header>
+  	<article>
 	<form class="filmform group" action="#">
-		<article>
 		<fieldset name="production" id="production" title="Production Info">
 		<legend>Production Info</legend>
 		<ol>
@@ -59,33 +59,32 @@
 			 <label for="filmTitle">Title: </label>
 			 <input name="filmTitle" id="filmTitle" />
 			</li>
-			<li class="fullRow">
-				<label for="filmDirector">Director: </label>
+			<li class="newRow"><label for="filmDirector">Director: </label>
 					<input name="filmDirector" id="filmDirector" />
 			</li>
 			<li>
-				 <label for="filmProducer">Producer: </label>
-				<input name="filmProducer" id="filmProducer" />
+					<label for="filmYear">Year: </label>
+						<input name="filmYear" id="filmYear" />
+			</li>
+			<li>
+										<label for="filmLength">Length: </label>
+										<input name="filmLength" id="filmLength" />
+			</li>
+			<li>
+									<label for="filmStudio">Studio: </label>
+										<input name="filmStudio" id="filmStudio" />
+			</li>
+			<li>
+										<label for="filmFormat">Format: </label>
+										<input name="filmFormat" id="filmFormat" />
+			</li>
+			<li>
+									 <label for="filmProducer">Producer: </label>
+									<input name="filmProducer" id="filmProducer" />
 			</li>
 			<li>						
-						<label for="filmWriter">Writer: </label>
-						<input name="filmWriter" id="filmWriter" />
-			</li>
-			<li>
-						<label for="filmStudio">Studio: </label>
-						<input name="filmStudio" id="filmStudio" />
-			</li>
-			<li>
-					<label for="filmYear">Year: </label>
-					<input name="filmYear" id="filmYear" />
-			</li>
-			<li>
-					<label for="filmLength">Length: </label>
-					<input name="filmLength" id="filmLength" />
-			</li>
-			<li>
-					<label for="filmFormat">Format: </label>
-					<input name="filmFormat" id="filmFormat" />
+									<label for="filmWriter">Writer: </label>
+									<input name="filmWriter" id="filmWriter" />
 			</li>
 		</ol>
 		</fieldset>
@@ -100,20 +99,18 @@
 								 <label for="filmOther">Other: </label>
 								 <input name="filmOther" id="filmOther" />
 			</li>
-		</ol>		
+		</ol>					
 		</fieldset>
-		</article>
-		<aside>
-		  <fieldset name="castInfo" id="castInfo" title="Cast">
-			
+
+		<fieldset name="castInfo" id="castInfo">
 			<legend>Cast</legend>
 			<!-- programatically filled by DB -->
-		  </fieldset>
-		</aside>
+		</fieldset>
 		<fieldset>
 			<button type="submit">Upload</button>
 		</fieldset>
 	</form>
+  </article>
   </section>	
     <div>
       
