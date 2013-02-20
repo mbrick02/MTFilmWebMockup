@@ -33,14 +33,14 @@ input[type=text],input[type=password],input[type=submit], textarea, button{
 	padding: 5px;
 	margin: 0;
 	margin-bottom: 10px;
-	color: #555;
+	color: #555555;
 }
 
 /* end of normalizing code */
 
 body {
 	height: 900px;
-	background: #42826C;
+	background: rgba()#42826C;
 	background: #42826C -webkit-linear-gradient(#002F32,#42826C) no-repeat;
 	background: #42826C -moz-linear-gradient(#002F32,#42826C) no-repeat;
 	background: #42826C -o-linear-gradient(#002F32,#42826C) no-repeat;
@@ -61,27 +61,10 @@ nav p a{
 }
 
 
-form fieldset ul li label, form fieldset ul li input {
-	float: left;
-}
-
-input.rowItem {
-	/* *** probably wont need/use .rowItem or .rowEnd to work with rows ******
-	 * float: left; */
-}
 
 #filmID{
 	display:none;
 }
-
-.newRow{
-	clear:left;
-}
-/*  Probably wont use this.....................
-.itemsLine {
-	display:block;
-}
-*/
 
 header{
 	background-color: rgba(200, 200, 200, 200);
@@ -108,28 +91,58 @@ h2{
 footer{
 	background: url("picture.png") no-repeat 0 0 #434343;
 	color: white;
-	
+	clear:both;	
 }
 
-fieldset {	
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-	
-}
 
 article{
-	width: 550px;
+	width: 70%;
 }
 
-aside{
-	width: 220px;
+#castInfo{
+	width: 30%;
 	float: right;
 }
 
+input[type=text],input[type=password],input[type=submit], textarea {
+	border: 1px solid #47816A;
+	background: #FFF;
+	width: 250px;
+	float: right;
+}
+
+/* this was in the Lynda.com code for CSS3 form for the login button */
+button {
+	float: right;
+	color: #5522FF;
+	padding: 5px 10px;
+	background: #E52E32;
+	clear: both;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+input[type=text]:focus,input[type=password]:focus{
+	background: #DDD;
+}
+
+ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+form fieldset ul li label, form fieldset ul li input {
+	float: left;
+}
+
+aside{
+	clear:both;
+}
+
 form fieldset {
-	margin: 0 auto;
-	/* position: relative; */
 	top: 10px;
 	background: #F9C35F;
 	background: url('./includes/pattern.png'), -webkit-linear-gradient(#F9C35F, #A5C775) no-repeat;
@@ -155,49 +168,18 @@ form fieldset {
 	  rgba(0,0,0,.5);
 }
 
-input[type=text],input[type=password],input[type=submit], textarea {
-	border: 1px solid #47816A;
-	background: #FFF;
-	width: 330px;
-	float: right;
-}
-
-/* this was in the Lynda.com code for CSS3 form for the login button */
-button {
-	float: right;
-	color: #FFC861;
-	padding: 5px 10px;
-	
-	background: #022E32;
-	
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-}
-
-
-/*
- * code to keep labels to left (needs to match input styling)
- *  ***Need to make  this conditional if we have a mobile browser with labels on top********** 
-label{
-	float: left;
-	text-align: right;
-	font-size: 13px;
-	color: #FC7D49;
-	padding: 5px;
-	clear: both;
-}
-*/
-
-input[type=text]:focus,input[type=password]:focus{
-	background: #DDD;
-}
-
-ol {
-	list-style: none;
-	margin: 0;
+fieldset {
+	border: none;
+	float:left;
+	background: rgb(237, 228, 214);
+	width: 70%;
 	padding: 0;
+	margin: 0;
+	-webkit-border-radius: 0 .5em .5em 0;
+	-moz-border-radius: 0 .5em .5em 0;
+	border-radius: 0 .5em .5em 0;
 }
+
 form fieldset ol li {
 	float: left;
 }
@@ -212,7 +194,6 @@ fieldset:before{
 	font: 1.2em Cantarell, Arial, Helvetica, sans-serif;
 	font-weight:bold;
 	border-bottom: 1px solid rgb(76, 67, 65);
-	width: 80%;
 }
 
 
@@ -244,16 +225,10 @@ form ol li label, ol li .grouplabel {
 	text-shadow: 0 1px 0px #FFF;
 }
 
-fieldset {
-	border: none;
-	background: rgb(237, 228, 214);
-	/* position: relative; */
-	width: 80%;
-	padding: 1em;
-	margin: 1em 0;
-	-webkit-border-radius: 0 .5em .5em 0;
-	-moz-border-radius: 0 .5em .5em 0;
-	border-radius: 0 .5em .5em 0;
+form.group {
+	background: #AAAAAA;
+	border: 2px;
+	border-color: #DDDDDD;
 }
 
 .fullRow{

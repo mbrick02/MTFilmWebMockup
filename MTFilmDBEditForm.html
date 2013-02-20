@@ -36,21 +36,19 @@
 </head>
 
 <body>
-  <div>
-    <header>
-      <h1>templates</h1>
-    </header>
+<header>
+  		<h1>Film Database Record</h1>
+  		<h2>with images of old reviews below</h2>
+</header>
+<aside class="navBar">
     <nav>
       <p><a href="/">Home</a></p>
       <p><a href="/contact">Contact</a></p>
     </nav>
+</aside>
+<article class="group">
   <section id="wrapper">
-  	<header>
-  		<h1>Film Database Record</h1>
-  		<h2>with images of old reviews below</h2>
-  	</header>
 	<form class="filmform group" action="#">
-		<article>
 		<fieldset name="production" id="production" title="Production Info">
 		<legend>Production Info</legend>
 		<ol>
@@ -102,26 +100,19 @@
 			</li>
 		</ol>		
 		</fieldset>
-		</article>
-		<aside>
-		  <fieldset name="castInfo" id="castInfo" title="Cast">
-			
+		<fieldset name="castInfo" id="castInfo" title="Cast">
 			<legend>Cast</legend>
 			<!-- programatically filled by DB -->
-		  </fieldset>
-		</aside>
-		<fieldset>
-			<button type="submit">Upload</button>
 		</fieldset>
+		<button type="submit">Upload</button>
 	</form>
-  </section>	
-    <div>
-      
-    </div>
-
-    <footer>
+	</section>	
+</article>
+<aside class="otherStuff">
+     Stuff outside form/fieldsets/article/section tags
+</aside>
+<footer>
      <p>&copy; Copyright  by bricklerml</p>
-    </footer>
-  </div>
+</footer>
 </body>
 </html>
