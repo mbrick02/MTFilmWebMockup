@@ -41,9 +41,11 @@
   		<h2>with images of old reviews below</h2>
 </header>
 <aside class="navBar">
-    <nav>
-      <p><a href="/">Home</a></p>
-      <p><a href="/contact">Contact</a></p>
+    <nav class="topNavBar">
+      <ol>
+      	<li><a href="#">Home</a></li>
+      	<li><a href="#">Contact</a></li>
+      </ol>
     </nav>
 </aside>
 <article class="group">
@@ -87,6 +89,10 @@
 			</li>
 		</ol>
 		</fieldset>
+		<fieldset name="castInfo" id="castInfo" title="Cast">
+			<legend>Cast</legend>
+			<p>***This will be programatically filled by DB***</p>
+		</fieldset>
 		<fieldset name="location" id="location" title="Location and Other Info">
 		<legend>Location and Other Info</legend>
 		<ol>
@@ -99,10 +105,6 @@
 								 <input name="filmOther" id="filmOther" />
 			</li>
 		</ol>		
-		</fieldset>
-		<fieldset name="castInfo" id="castInfo" title="Cast">
-			<legend>Cast</legend>
-			<!-- programatically filled by DB -->
 		</fieldset>
 		<button type="submit">Upload</button>
 	</form>

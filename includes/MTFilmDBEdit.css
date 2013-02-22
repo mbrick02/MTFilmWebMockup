@@ -56,10 +56,25 @@ body {
 	margin: 1% auto;
 }
 
-nav p a{
+nav.topNavBar ol li{
+	display: inline;
+	text-decoration:none;
 	color: #F1F1F1;
+	list-style:none;
 }
 
+nav.topNavBar ol li a {
+	text-decoration:none;
+	color:white;
+	cursor:pointer;
+	cursor:hand;
+	
+}
+
+nav.topNavBar ol li a:hover {
+	text-decoration:none;
+	color:orange;
+}
 
 
 #filmID{
