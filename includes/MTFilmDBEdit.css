@@ -51,6 +51,10 @@ body {
 	     endColorstr='#42836C',GradientType=0 );
 }
 
+.hideIt{
+	display: none;
+}
+
 #wrapper{
 	width: 90%;
 	margin: 1% auto;
@@ -68,14 +72,12 @@ nav.topNavBar ol li a {
 	color:white;
 	cursor:pointer;
 	cursor:hand;
-	
 }
 
 nav.topNavBar ol li a:hover {
 	text-decoration:none;
 	color:orange;
 }
-
 
 #filmID{
 	display:none;
@@ -111,7 +113,8 @@ footer{
 
 
 article{
-	width: 70%;
+	/* 2/25 want review & review image across page 
+	width: 70%; */
 }
 
 #castInfo{
@@ -122,7 +125,8 @@ article{
 input[type=text],input[type=password],input[type=submit], textarea {
 	border: 1px solid #47816A;
 	background: #FFF;
-	width: 250px;
+	/* was: width: 250px; */
+	width: 90%;
 	float: right;
 }
 
@@ -148,13 +152,14 @@ ol {
 	padding: 0;
 }
 
-
 form fieldset ul li label, form fieldset ul li input {
 	float: left;
 }
 
-aside{
+section.review {
+	width: 100%;
 	clear:both;
+	float: left;
 }
 
 form fieldset {
@@ -187,8 +192,8 @@ fieldset {
 	border: none;
 	float:left;
 	background: rgb(237, 228, 214);
-	width: 70%;
-	padding: 0;
+	width: 60%;
+	padding: 10px;
 	margin: 0;
 	-webkit-border-radius: 0 .5em .5em 0;
 	-moz-border-radius: 0 .5em .5em 0;
@@ -210,7 +215,6 @@ fieldset:before{
 	font-weight:bold;
 	border-bottom: 1px solid rgb(76, 67, 65);
 }
-
 
 ol li ol {
 	padding: 5px;
