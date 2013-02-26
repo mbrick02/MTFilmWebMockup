@@ -156,12 +156,6 @@ form fieldset ul li label, form fieldset ul li input {
 	float: left;
 }
 
-section.review {
-	width: 100%;
-	clear:both;
-	float: left;
-}
-
 form fieldset {
 	top: 10px;
 	background: #F9C35F;
@@ -192,12 +186,17 @@ fieldset {
 	border: none;
 	float:left;
 	background: rgb(237, 228, 214);
-	width: 60%;
+	width: 63%;
 	padding: 10px;
-	margin: 0;
+	margin-bottom: 5px;
 	-webkit-border-radius: 0 .5em .5em 0;
 	-moz-border-radius: 0 .5em .5em 0;
 	border-radius: 0 .5em .5em 0;
+}
+
+fieldset.review {
+	width: 100%;
+	clear:both;
 }
 
 form fieldset ol li {
@@ -251,7 +250,8 @@ form.group {
 }
 
 .fullRow{
-	width: 100%;
+	width: 99%;
+	margin: 0 auto;
 }
 
 #filmTitle{
