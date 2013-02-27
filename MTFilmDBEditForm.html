@@ -49,7 +49,6 @@
     </nav>
 </aside>
 <article class="group">
-  <section id="wrapper">
 	<form class="filmform group" action="#">
 		<fieldset name="production" id="production" title="Production Info">
 		<legend>Production Info</legend>
@@ -112,12 +111,15 @@
 		<fieldset class="review" id="oldReview" title="Old Review Image">
 			<ol>
 				<input id="oldRvwFileNm" class="hideIt" />
-				<li><img id="OldRvwImg" src="../RvwsSepPgs/MThroopRvws_Page_001.jpg" width="100%"/></li>
+				<li><img id="OldRvwImg" src="./RvwsSepPgs/MThroopRvws_Page_001.jpg" width="100%"/></li>
 			</ol>
 		</fieldset>
-		<button type="submit">Upload</button>
+		<button class="upload" type="submit">Upload</button>
 	</form>
-  </section>	
+	<section id="reviewImgsNav">
+		<button id="prevRvw">Previous Review</button>
+		<button id="nextRvw">Next Review</button>
+	</section>
 </article>
 <footer>
      <p>&copy; Copyright  by bricklerml</p>

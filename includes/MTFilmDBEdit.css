@@ -7,7 +7,7 @@ form * {
  
 .group:before, .group:after {
 	content: "\0020"; /* space */
-	diplay: inline-block;
+	display: inline-block;
 	height: 0;
 	overflow: hidden;
 }
@@ -53,11 +53,6 @@ body {
 
 .hideIt{
 	display: none;
-}
-
-#wrapper{
-	width: 90%;
-	margin: 1% auto;
 }
 
 nav.topNavBar ol li{
@@ -131,15 +126,20 @@ input[type=text],input[type=password],input[type=submit], textarea {
 }
 
 /* this was in the Lynda.com code for CSS3 form for the login button */
+/* below is default style for all buttons */
 button {
 	float: right;
 	color: #5522FF;
 	padding: 5px 10px;
 	background: #E52E32;
-	clear: both;
+	/* clear: both; */
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
+}
+
+button.upload {
+	clear: both;
 }
 
 input[type=text]:focus,input[type=password]:focus{
@@ -256,4 +256,24 @@ form.group {
 
 #filmTitle{
 	width:60%;
+}
+
+#OldRvwImg{
+	width: 98%;
+}
+
+#reviewImgsNav{
+	margin: 0 auto;
+	width: 50%;
+	border: 2px;
+}
+
+#prevRvw{
+	float: left;
+	display: inline;
+	clear: both;	
+}
+
+#nextRvw{
+	float:right;
 }
