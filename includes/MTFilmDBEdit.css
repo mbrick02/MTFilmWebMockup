@@ -103,6 +103,7 @@ h2{
 footer{
 	background: url("picture.png") no-repeat 0 0 #434343;
 	color: white;
+	width: 95%;
 	clear:both;	
 }
 
