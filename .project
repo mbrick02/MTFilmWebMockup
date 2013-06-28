@@ -9,4 +9,10 @@
 	<natures>
 		<nature>com.aptana.projects.webnature</nature>
 	</natures>
+	<variableList>
+		<variable>
+			<name>HOME</name>
+			<value>$%7BECLIPSE_HOME%7D</value>
+		</variable>
+	</variableList>
 </projectDescription>
